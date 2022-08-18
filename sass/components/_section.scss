@@ -1,0 +1,355 @@
+%hero-text-decoration {
+  color: $white-color;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ===HERO===
+.hero {
+  padding-bottom: 115px;
+  margin-bottom: 100px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Rectangle 137.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Rectangle 137@2x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.slider-info {
+  width: 462px;
+  height: 670px;
+  background-color: $white-color;
+  padding: 100px 90px;
+  border-left: 15px solid $accent-color;
+  justify-self: center;
+}
+.slider-lable {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.slider-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.slider-description {
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.button {
+  @extend %button;
+  @extend %hero-text-decoration;
+  background-color: $accent-color;
+  display: block;
+  font-size: 16px;
+  line-height: 1.88;
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+.slider-nav {
+  width: 95px;
+  margin: 0 auto;
+
+  .slider-caunt {
+    margin-bottom: 9px;
+  }
+  .slider-numb {
+    font-size: 36px;
+  }
+  .slider-total {
+    font-size: 24px;
+  }
+  .button-arrow {
+    @extend %button;
+    background-color: $white-color;
+  }
+}
+// ===ADVANTAGE===
+.advantages {
+  margin-bottom: 100px;
+}
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 52px;
+  z-index: 10;
+}
+
+.accent {
+  &::before {
+    content: "";
+    position: relative;
+    z-index: -1;
+    left: 15px;
+    border: 10px solid $accent-color;
+    background: $accent-color;
+  }
+}
+
+.list-item {
+  margin: 15px;
+  width: 586px;
+  height: 350px;
+
+  .title-projects {
+    font-size: 36px;
+    color: $white-color;
+    margin-bottom: 18px;
+  }
+  .title-description {
+    font-weight: 400;
+    color: $white-color;
+  }
+}
+
+.list-box {
+  margin: -15px;
+  display: flex;
+}
+.slider-wrapper {
+  position: relative;
+}
+.advantages-link {
+  width: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  transition: 250ms $timing-function;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.advantages-overlay {
+  position: absolute;
+  padding: 30px;
+  top: 190px;
+  left: 0;
+  width: 100%;
+  height: 360px;
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 2;
+  transition: 250ms $timing-function;
+  .advantages-link:hover &,
+  .advantages-link:focus & {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+.btn-slider {
+  @extend %button;
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+}
+.left {
+  left: 15px;
+  top: 160px;
+}
+.right {
+  right: 15px;
+  top: 160px;
+}
+// ==CATALOG==
+.catalog-list {
+  display: flex;
+  margin: 0 auto 84px auto;
+}
+.catalog-item {
+  display: block;
+  margin-right: 200px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.catalog-link {
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: 250ms $timing-function;
+}
+.catalog-icon {
+  width: 100px;
+  height: 100px;
+}
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.category-item {
+  margin: 0 15px 50px 15px;
+  min-width: 586px;
+  min-height: 360px;
+}
+.category-link {
+  position: relative;
+  transition: 250ms $timing-function;
+  &:hover,
+  &:focus {
+    top: -25px;
+    .wrapper-title {
+      background-color: $accent-color;
+      color: $white-color;
+    }
+    .new-price,
+    .old-price {
+      color: $white-color;
+    }
+  }
+}
+.wrapper-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  .category-title,
+  .price {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+}
+.label {
+  position: absolute;
+  background-color: $main-text-color;
+  color: $white-color;
+  width: 120px;
+  height: 33px;
+  top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+.hit {
+  width: 143px;
+}
+.promotion {
+  background-color: $promotion-color;
+  width: 85px;
+  top: 48px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  .new-price {
+    color: $promotion-color;
+    margin-right: 10px;
+  }
+  .old-price {
+    color: $old-price;
+    font-size: 18px;
+    text-decoration: line-through;
+  }
+}
+
+// ===ABOUT US===
+.about {
+  margin-bottom: 100px;
+}
+.about-description {
+  padding: 100px 0;
+  background-image: url("../images/Rectangle 174.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .about-description {
+    background-image: url("../images/Rectangle 174@2x.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+.wrapper-description {
+  max-width: 741px;
+  max-height: 475px;
+  border-right: 15px solid $accent-color;
+  padding: 50px 50px 50px 0;
+  background-color: $white-color;
+}
+.description {
+  margin-bottom: 15px;
+  font-weight: 400;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.description-accent {
+  font-weight: 700;
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+// ===Questions===
+.questions {
+  margin-bottom: 100px;
+}
+.wrapper-questions {
+  padding: 100px 0;
+  background-image: url("../images/Rectangle 175.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .wrapper-questions {
+    background-image: url("../images/Rectangle 175@2x.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+.questions-info {
+  width: 463px;
+  height: 457px;
+  background-color: $white-color;
+  padding: 50px 0 50px 50px;
+  border-left: 15px solid $accent-color;
+  justify-self: center;
+  margin-left: auto;
+}
+.questions-form {
+  margin: 30px 0;
+  .input {
+    width: 100%;
+    height: 51px;
+    margin-bottom: 15px;
+    padding: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.description-form {
+  font-weight: 400;
+  max-width: 345px;
+}
+.text-accent {
+  font-weight: 700;
+}
+.button-quations {
+  width: 100%;
+}

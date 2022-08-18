@@ -1,0 +1,117 @@
+.footer {
+  .container {
+    position: relative;
+  }
+  padding: 50px 0 15px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Rectangle 176.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: $main-text-color;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Rectangle 176@2x.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: $main-text-color;
+  }
+}
+.list-wrapper {
+  display: flex;
+  margin-top: 50px;
+  .footer-list-item {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.button-up {
+  position: absolute;
+  top: -75px;
+  left: 50px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+.icon-up {
+  width: 70px;
+  height: 70px;
+}
+.footer-logo {
+  fill: $white-color;
+}
+.footer-text {
+  color: $white-color;
+}
+.item-accent {
+  color: $accent-color;
+}
+.link-item {
+  text-transform: uppercase;
+  color: $white-color;
+}
+.footer-list-category {
+  margin-right: 55px;
+}
+.footer-nav {
+  margin-right: 87px;
+}
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.text {
+  text-transform: none;
+}
+.link-phone {
+  display: flex;
+  fill: $accent-color;
+  transition: 250ms $timing-function;
+}
+.phone {
+  display: block;
+  color: $accent-color;
+}
+.footer-soc {
+  display: block;
+  fill: $white-color;
+  color: $white-color;
+  font-weight: 400;
+}
+.sign {
+  margin-top: 100px;
+  display: flex;
+  color: $white-color;
+  font-weight: 400;
+  font-size: 14px;
+}
+.sing-company {
+  display: flex;
+  align-items: center;
+  color: $white-color;
+  font-family: $logo-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+.icon-sing {
+  width: 21px;
+  height: 21px;
+  margin-left: 125px;
+  margin-right: 5px;
+}
