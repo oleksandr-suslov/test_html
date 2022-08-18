@@ -1,8 +1,9 @@
 .footer {
+  background-color: $main-text-color;
   .container {
     position: relative;
-  }
-  padding: 50px 0 15px;
+  
+  padding: 50px 0 15px 50px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -10,7 +11,7 @@
     url("../images/Rectangle 176.jpg");
   background-position: right;
   background-repeat: no-repeat;
-  background-color: $main-text-color;
+
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -23,8 +24,9 @@
       url("../images/Rectangle 176@2x.jpg");
     background-position: right;
     background-repeat: no-repeat;
-    background-color: $main-text-color;
+
   }
+}
 }
 .list-wrapper {
   display: flex;
@@ -38,7 +40,7 @@
 }
 .button-up {
   position: absolute;
-  top: -75px;
+  top: -30px;
   left: 50px;
   border: none;
   padding: 0;

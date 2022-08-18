@@ -539,24 +539,23 @@ img {
 }
 
 .footer {
-  padding: 50px 0 15px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Rectangle 176.jpg");
-  background-position: right;
-  background-repeat: no-repeat;
   background-color: #1e2e36;
 }
 .footer .container {
   position: relative;
+  padding: 50px 0 15px 50px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Rectangle 176.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
-
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
+  .footer .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Rectangle 176@2x.jpg");
     background-position: right;
     background-repeat: no-repeat;
-    background-color: #1e2e36;
   }
 }
+
 .list-wrapper {
   display: flex;
   margin-top: 50px;
@@ -570,7 +569,7 @@ img {
 
 .button-up {
   position: absolute;
-  top: -75px;
+  top: -30px;
   left: 50px;
   border: none;
   padding: 0;
